@@ -32,19 +32,25 @@ console.log(addNumbers(2, 2));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
+function multiplyThree(first, second, third) {
+  let total = first * second * third;
+  return total;
 
-}
+}//this function will multiply and three numbers you add as perameters.
+console.log(multiplyThree(3, 4, 5));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
+  } else {
+  return false;
   }
-  return;
-}
+}/* This function will return either true or false depending on if the 
+ number you add as a perameter is greater than 0 or less than 0. */
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log('isPositive - should say true', isPositive(3));
@@ -55,8 +61,15 @@ console.log('isPositive - should say false', isPositive(-3));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
+  if (array.length == [])
+    return 'undefined';
+  else {
+    return array[array.length - 1];//this part was tricky. I kept getting 2 until i re wrote this part of the code
+  }
 
 }
+console.log(getLast([1, 2, 3]));
+console.log(getLast([]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
