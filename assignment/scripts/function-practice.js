@@ -15,7 +15,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  
+
   return "Hello, " + name + "!";
 }
 // Remember to call the function to test
@@ -46,7 +46,7 @@ function isPositive(number) {
   if (number > 0) {
     return true;
   } else {
-  return false;
+    return false;
   }
 }/* This function will return either true or false depending on if the 
  number you add as a perameter is greater than 0 or less than 0. */
@@ -69,7 +69,7 @@ function getLast(array) {
 
 }
 console.log(getLast(['a', 'b', 'c']));
-console.log(getLast([])); 
+console.log(getLast([]));
 
 
 // 7. Function to find a value in an array. Return true if the 
