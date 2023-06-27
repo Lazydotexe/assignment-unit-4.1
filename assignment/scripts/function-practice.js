@@ -62,7 +62,7 @@ console.log('isPositive - should say false', isPositive(-3));
 //    array is empty, return `undefined`.
 function getLast(array) {
   if (array.length == [])
-    return 'undefined';
+    return undefined; // i'm not sure if you wanted the '' included or not.
   else {
     return array[array.length - 1];//this part was tricky. I kept getting 2 until i re wrote this part of the code
   }
